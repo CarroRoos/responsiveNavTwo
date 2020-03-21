@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0px;
+    background-color: black; 
+    transition: background-color .5s;
+}
+
+$font-color: #FFFFFF;
+$background-color: black; 
+$hover-color: grey; 
+
+// nav
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $background-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $font-color;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: $hover-color;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: $font-color;
+  }
+
+
+
+/*   main */
+
+.japan {
+    display: flex;
+    flex-direction: column;
+
+&_heading {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 84px;
+    color: $font-color;
+    margin-bottom: 30px;
+}
+
+&_text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    color: $font-color;
+}
+
+&_second-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    color: $font-color;
+    margin-top: 5px;
+}
+
+&_img {
+    display: flex;
+    justify-content: center;
+    width: 864px;
+    height: 328px;
+    margin-top: 47px;
+}
+
+&_container {
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+// media
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

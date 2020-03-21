@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0px;
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: #FFFFFF;
+}
+
+/*   main */
+.japan {
+  display: flex;
+  flex-direction: column;
+}
+.japan_heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 84px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.japan_text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.japan_second-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+.japan_img {
+  display: flex;
+  justify-content: center;
+  width: 864px;
+  height: 328px;
+  margin-top: 47px;
+}
+.japan_container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
